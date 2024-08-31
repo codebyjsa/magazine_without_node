@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <a href="https://gndec.ac.in/" id="logo">
+      <img src="/logo/logo_17.png" alt="GNDEC Logo">
+    </a>
+    <a href="https://gndec.ac.in/" id="header-text">
+      <span>GNDEC, GILL PARK LUDHIANA</span>
+    </a>
+    <div id="header-title">
+      <span>MAGAZINE</span>
+    </div>
+  </header>
+  <div id="page-container">
+    <button id="prev" aria-label="Previous Page">
+      <img src="/arrows/back-24838_1280.png" alt="Previous">
+    </button>
+    <img id="page-image" src="/images/1.jpg" alt="Magazine Page">
+    <button id="next" aria-label="Next Page">
+      <img src="/arrows/right-24837_1280.png" alt="Next">
+    </button>
+  </div>
+  <div id="pagination">
+    <div id="pagination-buttons"></div>
+    <form id="go-to-page-form">
+      <input id="page-number" type="number" min="1" value="1">
+      <button id="go-to-page" type="submit">Go</button>
+    </form>
+  </div>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

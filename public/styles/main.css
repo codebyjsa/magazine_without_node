@@ -1,0 +1,138 @@
+/* public/styles/main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+body {
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b00a0a;
+    color: white;
+    padding: 10px 20px;
+}
+
+#logo img {
+    height: 65px;
+}
+
+#header-text, #header-title {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    line-height: 40px;
+}
+
+#header-title {
+    font-size: 32px;
+}
+
+#page-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-image {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #b00a0a;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+#prev img, #next img {
+    width: 40px;
+    height: auto;
+}
+
+#pagination {
+    margin-top: 1rem;
+}
+
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#pagination-controls button {
+    background: none;
+    border: 1px solid #b00a0a;
+    color: #b00a0a;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+#pagination-controls button.disabled {
+    background: none;
+    border: none;
+    color: #b00a0a;
+    cursor: default;
+}
+
+#pagination-controls button.active {
+    background-color: #b00a0a;
+    color: white;
+}
+
+#pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#pagination-buttons button {
+    background-color: #b00a0a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#pagination-buttons button.active {
+    background-color: #e0e0e0;
+    color: #b00a0a;
+}
+
+#pagination-buttons button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
