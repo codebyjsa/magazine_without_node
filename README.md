@@ -1,1 +1,0 @@
-# magazine_without_node
